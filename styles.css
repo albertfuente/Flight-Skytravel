@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+}
+
+body {
+  margin: 0;
+}
+img{
+  padding: 10px;
+}
+header {
+  text-align: center;
+  height: 40vh;
+  background: url(https://static.dezeen.com/uploads/2016/03/boom-supersonic-aircraft-richard-branson-dezeen_ban-936x668.jpg) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 4vw;
+}
+h2{
+  color:black;
+  font-size: 1em;
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav nav{
+  position:fixed;
+  box-shadow: 0 5px rgba(0,0,0,0.1)
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+.fixed-nav li.logo{
+  max-width: 500px;
+
+}
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: white;
+  transition: all .5s;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.gridContainer{
+  margin: 100px auto;
+  width: 100%;
+  display:grid;
+  grid-template-columns: 1fr;
+  background-color: #4B93E5;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+  font-size: 1em;
+  padding: 20px;
+  border-top: 2px solid #F1C933;
+  border-bottom:2px solid #F1C933;
+
+}
+
+#contact{
+  text-align: center;
+  background-color: #2196F3;
+  padding: 10px;
+  border-top: 2px solid #F1C933;
+
+}
+i{
+  padding: 10px;
+}
+.search, .buy{
+  margin: 100px auto;
+}
+.inputValue, .select, .btn, .fromValue, .toValue{
+  padding: 10px;
+  border-radius: 1px solid #F1C933;
+}
+.insertSearch{
+  font-weight: bold;
+}
+.btn{
+  background-color: #F1C933;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.select{
+  padding-left: 120px;
+}
+.img2{
+  width: 10%;
+}
